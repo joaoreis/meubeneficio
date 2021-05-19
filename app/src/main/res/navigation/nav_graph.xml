@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigator"
+    app:startDestination="@id/blankFragment">
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="br.com.jxrsocial.meubeneficio.TutorialFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_tutorial">
+        <action
+            android:id="@+id/action_blankFragment_to_incomeFragment"
+            app:destination="@id/incomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/incomeFragment"
+        android:name="br.com.jxrsocial.meubeneficio.IncomeFragment"
+        android:label="fragment_income"
+        tools:layout="@layout/fragment_income">
+        <action
+            android:id="@+id/action_incomeFragment_to_availableBenefitsFragment"
+            app:destination="@id/availableBenefitsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/availableBenefitsFragment"
+        android:name="br.com.jxrsocial.meubeneficio.AvailableBenefitsFragment"
+        android:label="AvailableBenefitsFragment"
+        tools:layout="@layout/fragment_available_benefits" >
+        <argument
+            android:name="bpc"
+            app:argType="boolean" />
+        <argument
+            android:name="bolsaFamilia"
+            app:argType="boolean" />
+        <argument
+            android:name="auxilio"
+            app:argType="boolean" />
+        <argument
+            android:name="nome"
+            app:argType="string" />
+        <argument
+            android:name="cadUnico"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_availableBenefitsFragment_to_incomeFragment"
+            app:destination="@id/incomeFragment"
+            app:popUpTo="@id/incomeFragment" />
+        <action
+            android:id="@+id/action_availableBenefitsFragment_to_crasLocationFragment"
+            app:destination="@id/crasLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/crasLocationFragment"
+        android:name="br.com.jxrsocial.meubeneficio.CrasLocationFragment"
+        android:label="CrasLocationFragment"
+        tools:layout="fragment_cras_location"/>
+</navigation>

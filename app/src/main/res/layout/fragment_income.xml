@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".IncomeFragment">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Qual o seu nome completo?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:hint="Ex: Jose da Silva"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvAge"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:text="E a sua idade?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:hint="Ex: 18"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAge" />
+
+        <TextView
+            android:id="@+id/tvFamilySize"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:text="Quantas pessoas moram na sua casa, incluindo você?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etAge" />
+
+        <EditText
+            android:id="@+id/etFamilySize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:textSize="18sp"
+            android:hint="Ex: 2"
+            android:inputType="number"
+            android:maxLength="2"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFamilySize" />
+
+        <TextView
+            android:id="@+id/tvMonthlyIncome"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:text="Qual a sua renda familiar mensal?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFamilySize" />
+
+        <TextView
+            android:id="@+id/tipMonthlyIncome"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="OBS: Deixe em branco caso não tenha renda"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMonthlyIncome" />
+
+        <EditText
+            android:id="@+id/etMonthlyIncome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:hint="R$ 0,00"
+            android:inputType="number|numberDecimal"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tipMonthlyIncome" />
+
+        <TextView
+            android:id="@+id/tvCadUnico"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Já está inscrito no CadÚnico?"
+            android:textAlignment="textStart"
+            app:layout_constraintBottom_toBottomOf="@+id/cadUnicoCheckBox"
+            app:layout_constraintEnd_toStartOf="@+id/cadUnicoCheckBox"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cadUnicoCheckBox" />
+
+        <CheckBox
+            android:id="@+id/cadUnicoCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="Sim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMonthlyIncome" />
+
+        <TextView
+            android:id="@+id/tvEmployed"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Está empregado atualmente?"
+            android:textAlignment="textStart"
+            app:layout_constraintBottom_toBottomOf="@+id/employedCheckBox"
+            app:layout_constraintEnd_toStartOf="@+id/employedCheckBox"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/employedCheckBox" />
+
+        <CheckBox
+            android:id="@+id/employedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Sim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cadUnicoCheckBox" />
+
+        <Button
+            android:id="@+id/seeBenefitsButton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            android:paddingHorizontal="25dp"
+            android:text="Ver benefícios"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmployed"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvBenefits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/good_news"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/informCadUnico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/informCadUnico"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBenefits"
+        tools:text="Informe CadUnico" />
+
+    <Button
+        android:id="@+id/btYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Sim"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/btNo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBenefits"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/btYes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btYes"
+        app:layout_constraintTop_toTopOf="@+id/btYes"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btCras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Ver CRAS mais próximos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/informCadUnico" />
+</androidx.constraintlayout.widget.ConstraintLayout>

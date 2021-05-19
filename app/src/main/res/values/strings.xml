@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Meu Benefício</string>
+    <string name="tutorialText">Este app irá te auxiliar a verificar quais os benefícios sociais disponíveis para você, e como consegui-los.\n\nPara isso, precisamos de alguns dados socioeconômicos seus.\n\n Vamos lá? :)</string>
+    <string name="good_news">Temos uma boa notícia para você, %s!\nVocê está elegível aos seguintes benefícios:\n\n%s</string>
+
+    <string name="cras_vitoria">Endereço: R. Loren Reno, 115 - Parque Moscoso, Vitória - ES, 29020-755\n\nTelefone: (27) 3132-8190</string>
+    <string name="cras_vila_velha">Endereço: R. Açucena, 861-913 - Jardim Asteca, Vila Velha - ES, 29104-120\n\nTelefone: (27) 3389-1132</string>
+    <string name="cras_serra">Endereço: R. Cassiano Castelo, 108 - Serra Sede, Serra - ES, 29176-010\n\nTelefone: (27) 3251-7757</string>
+    <string name="cras_cariacica">Endereço: R. Itaguaçu, 6 - Itacibá, Cariacica - ES, 29150-170\n\nTelefone: (27) 3346-6260</string>
+</resources>
